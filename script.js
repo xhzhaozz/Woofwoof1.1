@@ -61,7 +61,7 @@ ${styleText ? "\n参考段落：\n" + styleText : ""}
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      "Authorization": "Bearer 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"
+      "Authorization": "Bearer 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"
     },
     body: JSON.stringify({
       model: "gpt-4.1",
