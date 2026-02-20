@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <title>Woofwoof｜陈楚生 × 王栎鑫 同人生成</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont;
+      background: #fafafa;
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h1 { margin-bottom: 8px; }
+    section { margin-bottom: 18px; }
+    .tag-group button {
+      margin: 4px;
+      padding: 6px 10px;
+      border-radius: 14px;
+      border: 1px solid #ccc;
+      background: #fff;
+    }
+    .tag-group button.active {
+      background: #111;
+      color: #fff;
+    }
+    textarea {
+      width: 100%;
+      min-height: 120px;
+      margin-top: 8px;
+    }
+    #result {
+      min-height: 260px;
+      margin-top: 16px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Woofwoof</h1>
+  <p>陈楚生 × 王栎鑫｜同人文本生成器</p>
+
+  <section>
+    <h3>人物关系（多选）</h3>
+    <div class="tag-group" id="relation"></div>
+  </section>
+
+  <section>
+    <h3>背景设定（多选）</h3>
+    <div class="tag-group" id="background"></div>
+  </section>
+
+  <section>
+    <h3>关键情节（多选）</h3>
+    <div class="tag-group" id="plot"></div>
+  </section>
+
+  <section>
+    <h3>人物视角</h3>
+    <div class="tag-group" id="pov"></div>
+  </section>
+
+  <section>
+    <h3>特殊形式</h3>
+    <div class="tag-group" id="format"></div>
+  </section>
+
+  <section>
+    <h3>参考作品风格（多选）</h3>
+    <div class="tag-group" id="style"></div>
+    <textarea id="styleText" placeholder="或粘贴一段文字作为风格参考（可选）"></textarea>
+  </section>
+
+  <button onclick="generate()">生成同人文</button>
+
+  <textarea id="result" placeholder="生成内容将在此显示"></textarea>
+
+  <script src="script.js"></script>
+</body>
+</html>
